@@ -1,0 +1,72 @@
+<!--//https://github.com/Byjus5/Portafolio-->
+<!DOCTYPE HTML>
+<html>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Belanosima&family=Big+Shoulders+Inline+Text:wght@700&family=Gajraj+One&family=Hind+Siliguri:wght@700&family=Lugrasimo&family=Mynerve&family=Playfair+Display:ital,wght@0,500;1,400&family=Raleway:wght@100&family=Shantell+Sans:wght@500&family=Smokum&display=swap" rel="stylesheet">
+        <title>Mi pagina de portafolio</title>
+        <style>
+            h1 {
+                color: brown;
+               }
+          *{
+            border:solid;
+          }
+          h2{
+            color:blue;
+          }
+          p{
+            font-family: system-ui;
+          }
+          DataBase{
+            background-color: chocolate;
+            color: aqua;
+          }
+          
+        </style>
+        <link rel="stylesheet"type="text/css"href="style.ccs">
+        <script src="sketch.js"></script>
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+        <script> 
+
+        const firebaseConfig = {
+         apiKey: "AIzaSyB66q8zs2svAWOBZ6Swg7Op9P2N_HWe3MA",
+         authDomain: "base-de-datos-67925.firebaseapp.com",
+         databaseURL: "https://base-de-datos-67925-default-rtdb.firebaseio.com",
+         projectId: "base-de-datos-67925",
+         storageBucket: "base-de-datos-67925.appspot.com",
+         messagingSenderId: "806014685839",
+         appId: "1:806014685839:web:c6673eba17d5e4bf0c96fa"
+};
+        
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig); </script>
+    </head>
+
+    <body >
+      <header>
+        <h1>Base de datos kk xd</h1>
+        <a class="fa" href="#index.html">Proyecto</a>
+         <a class="fa" href="#aboutme.html">Acerca de mi</a>
+      </header>
+      
+      
+       <div id="index.html"> 
+        <h2 id="fh2">Estos son algunos juegos diseñados por mi</h2>
+        <p>Los juegos usan bibliotecas p5.js, p5.play and matter.js en javascript</p>
+
+        <center> 
+          <div>
+            <button onclick="dataBase()"  id="DataBase" type="button">Enviar</button>
+            <p> ingresa el nombre de tu videojuego</p>
+            <label>Nombre del juego:</label>
+            <input type="text" id="name"><br><br>
+          </div>
+        <center>
+        
+</center>
+    </body>
+</html>
